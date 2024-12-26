@@ -1,0 +1,20 @@
+train:
+  dataset:
+    name: DIV2K
+    lr_dir: data/DIV2K_train_LR
+    hr_dir: data/DIV2K_train_HR
+    valid_lr_dir: data/DIV2K_valid_LR
+    valid_hr_dir: data/DIV2K_valid_HR
+    scale: 4
+  batch_size: 16
+  num_epochs: 100
+  learning_rate: 1e-4
+  save_model_every: 10
+  checkpoint_dir: checkpoints/
+  logs_dir: logs/
+  num_workers: 4
+
+test:
+  input_dir: tests/test_images/
+  output_dir: results/
+  model_path: checkpoints/latest_model.pth

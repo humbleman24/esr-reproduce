@@ -1,0 +1,30 @@
+# Ignore contents of data directory but keep the directory itself
+data/*
+
+# Allow the data directory
+!data/
+
+# Ignore Python cache files in all directories
+**/__pycache__/
+**/*.py[cod]
+**/*$py.class
+
+# Ignore checkpoints
+checkpoint/
+
+# Ignore log files
+*.log
+
+# Ignore virtual environment directories
+venv/
+env/
+
+# Ignore Jupyter Notebook checkpoints
+**/.ipynb_checkpoints/
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore VS Code settings
+.vscode/
